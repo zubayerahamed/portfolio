@@ -16,9 +16,11 @@ return new class extends Migration
         Schema::create('skills', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->float('perceont');
+            $table->string('note')->nullable();
+            $table->double('perceont', 5.2)->default(0);
             $table->integer('seqn')->default(0);
             $table->boolean('active')->default(true);
+            $table->foreignId('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->timestamps();
         });
     }

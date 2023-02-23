@@ -334,8 +334,8 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{ route('admin.setting') }}" class="nav-link">
-                                <i class="ph-cogs"></i> <span>Settings</span>
+                            <a href="{{ route('admin.skill.all') }}" class="nav-link">
+                                <i class="ph-cogs"></i> <span>Skills</span>
                             </a>
                         </li>
                     </ul>

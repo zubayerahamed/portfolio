@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ListController;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\SkillController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -32,3 +33,7 @@ Route::get('/admin', function(){
 
 // Admin Settings
 Route::get('/admin/setting', [ListController::class, 'index'])->name('admin.setting');
+
+
+// Skills
+Route::get('/admin/skill/all', [SkillController::class, 'allPage'])->name('admin.skill.all');
